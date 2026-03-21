@@ -1,0 +1,32 @@
+name: "k_oxon"
+version: "1.0.0"
+
+profile: "k_oxon"
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  k_oxon:
+    +database: k_oxon
+    japan_map_for_bi:
+      raw:
+        +materialized: table
+      stg:
+        +materialized: view
+      mart:
+        +materialized: view
+    e_stat:
+      +enabled: false
+      raw:
+        +materialized: view
+      mart:
+        +materialized: table

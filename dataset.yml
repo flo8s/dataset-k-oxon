@@ -1,0 +1,16 @@
+title: "K-Oxon データ"
+description: "K-Oxon が公開するオープンデータ"
+cover: "🗾"
+tags: ["GIS", "行政区域", "境界", "地図"]
+public_url: "https://data.queria.io"
+s3_url: "{% if env_var('S3_BUCKET', '') %}s3://{{ env_var('S3_BUCKET') }}{% endif %}"
+
+dependencies:
+  - alias: "dwh"
+    ducklake_url: "https://data.oxon-data.work/fdl_experiment/dwh.ducklake"
+
+schemas:
+  japan_map_for_bi:
+    title: "Japan map for BI"
+  e_stat:
+    title: "E-Stat 統計データ"
