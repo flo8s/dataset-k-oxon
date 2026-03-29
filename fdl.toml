@@ -1,7 +1,23 @@
 name = "k_oxon"
 
-[storage]
-public_url = "https://data.queria.io"
+[meta]
+title = "K-Oxon データ"
+description = "K-Oxon が公開するオープンデータ"
+cover = "🗾"
+tags = ['GIS', '行政区域', '境界', '地図']
+repository_url = "https://github.com/flo8s/dataset-k-oxon"
 
-[remotes]
-origin = "s3://${FDL_S3_BUCKET}"
+[meta.schemas]
+[meta.schemas.japan_map_for_bi]
+title = "Japan map for BI"
+
+[meta.schemas.e_stat]
+title = "E-Stat 統計データ"
+
+
+[targets.default]
+url = "s3://${FDL_S3_BUCKET}"
+public_url = "https://data.queria.io"
+s3_endpoint = "${FDL_S3_ENDPOINT}"
+s3_access_key_id = "${FDL_S3_ACCESS_KEY_ID}"
+s3_secret_access_key = "${FDL_S3_SECRET_ACCESS_KEY}"
