@@ -8,8 +8,6 @@ models:
       meta:
         title: "都道府県境界"
         tags: ["GIS", "都道府県", "境界"]
-        license: "CC BY 4.0"
-        license_url: "https://creativecommons.org/licenses/by/4.0/"
         source_url: "https://github.com/K-Oxon/Japan-map-for-BI"
         published: true
     columns:
@@ -31,8 +29,6 @@ models:
       meta:
         title: "市区町村境界"
         tags: ["GIS", "市区町村", "境界"]
-        license: "CC BY 4.0"
-        license_url: "https://creativecommons.org/licenses/by/4.0/"
         source_url: "https://github.com/K-Oxon/Japan-map-for-BI"
         published: true
     columns:

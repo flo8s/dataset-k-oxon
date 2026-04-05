@@ -7,8 +7,6 @@ models:
     meta:
       title: "社会人口統計（市区町村）"
       tags: ["e-stat", "人口", "市区町村"]
-      license: "CC BY 4.0"
-      license_url: "https://creativecommons.org/licenses/by/4.0/"
       source_url: "https://www.e-stat.go.jp/"
       published: false
     columns:
