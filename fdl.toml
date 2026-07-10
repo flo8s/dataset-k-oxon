@@ -17,7 +17,7 @@ title = "K-Oxon データ"
 description = "K-Oxon が公開するオープンデータ"
 cover = "🗾"
 tags = ['GIS', '行政区域', '境界', '地図']
-repository_url = "https://github.com/flo8s/dataset-k-oxon"
+repository_url = "https://github.com/queria-io/dataset-k-oxon"
 
 [meta.schemas]
 [meta.schemas.japan_map_for_bi]
